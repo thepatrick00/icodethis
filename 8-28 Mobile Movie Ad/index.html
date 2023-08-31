@@ -1,0 +1,88 @@
+<!-- Need to work on my animations. When I click the button it works the first time but not backwards.
+
+IF YOU HAVE ANY GOOD CSS ANIMATION RSOURCES PLEASE TELL ME :)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>iCodeThis | 8-28 | Mobile Movie Ad</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/6cf14d4fb3.js"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-[#032443] flex justify-center items-center min-h-screen">
+  
+  <div id="main" class="p-6 max-[340px]:px-2 max-[250px]:px-1 bg-white max-w-sm w-full bg-gradient-to-t from-accent/25 overflow-hidden">
+    
+    <header
+    class="flex gap-2 items-center border-b-2 border-blue-300/50 pb-6 justify-between text-slate-700">
+    <i class="fa-solid fa-chevron-left text-2xl cursor-pointer p-4 -m-4"></i>
+    <h2 class="text-2xl">In Theatres</h2>
+    <i class="fa-solid fa-bars text-2xl"></i>
+  </header>
+  
+  <main class="w-full max-w-[90%] mx-auto">
+    
+    <div class="flex justify-between items-center mt-6 mx-auto">
+      <h2 class="text-lg font-semibold text-accent">Wonder Woman</h2>
+      <span
+      class="rounded-full aspect-square w-10 bg-gray-300/50 p-2 font-bold grid place-content-center text-slate-700">8.1</span>
+    </div>
+    
+    <div class="relative group isolate">
+      <i
+      class="fa-regular fa-circle-play text-gray-300/60 group-hover:text-gray-100 cursor-pointer text-6xl absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"></i>
+      <!-- main image -->
+      <img class="aboslute h-[180px] object-cover w-full mx-auto mt-2 shadow-blue-900/50 shadow-xl"
+      src="https://cdn.vox-cdn.com/thumbor/tHyOsoEfoNKhyiJ8o8PTjNwkiM4=/0x0:2048x1280/1400x1050/filters:focal(883x142:1209x468):format(jpeg)/cdn.vox-cdn.com/uploads/chorus_image/image/55016747/2017_The_Wonder_Woman_Gal_Gadot_wide.0.jpg"
+      alt="">
+      
+      <img class="top-0 left-2/3 absolute h-[150px] translate-y-4 -z-10 object-cover w-full brightness-90 contrast-75 saturate-[.5]" src="https://wegotthiscovered.com/wp-content/uploads/2023/05/wonder-woman.jpg?w=1200" alt="">
+      
+      <img class="top-0 -left-1/2 absolute h-[150px] translate-y-4 -z-10 object-cover w-full brightness-90 contrast-75 saturate-50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfDFoTGOcL3D0yMX9kgOgLpU9pwSnAU5V6EA&usqp=CAU" alt="">
+    </div>
+    
+    <span class="mt-4 mb-1 block">
+      2h 21min
+    </span>
+    <p class="text-sm">Before she was Wonder Woman, she was Diana, princess of the
+      Amazons, trained warror. When a pilot crashes and tells of conflict in the outside
+      world, she leaves home to fight a war, discovering her full powers and true
+      destiny.
+    </p>
+    <button class="w-full py-4 mt-16 mb-6 bg-accent text-white">Buy Tickets</button>
+  </main>
+</div>
+
+  <!-- If you click the back button it works and takes you to an all movies page. -->
+  <!-- When we close we scale to 0 -->
+  <div class="fixed top-0 left-0 grid place-content-center h-full w-full -z-10">
+    <div id="popup" class="h-[646px] max-w-sm w-[300px] bg-white text-center text-lg bg-gradient-to-t from-accent/25 border-2 border-black">
+      <p class="p-4">More Movies</p>
+      <div class="flex overflow-x-scroll
+      [&_article]:bg-blue-400
+      [&_article]:w-[150px]
+      [&_article]:h-16
+      [&_article]:border
+      [&_article]:border-gray-900
+      
+      ">
+        <article>a</article>
+        <article>b</article>
+        <article>c</article>
+        <article>d</article>
+        <article>e</article>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
